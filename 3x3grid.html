@@ -1,0 +1,82 @@
+<!––  Attempt to make an organized 3x3grid with some hover and clicking effects--!>
+
+<html>
+
+<style>
+
+body {
+    background-color: powderblue;
+    height: 1000px;
+}
+
+.square_container {
+    background-color: red;
+    height:600px;
+    width: 600px;
+    margin:auto;
+}
+
+.row_container  {
+    background-color: blue;
+    margin: auto;
+    width: 100%;
+    height:33.33%;
+}
+
+.box {
+    background-color: yellow;
+    transition: background 0.5s ease-in-out;
+    margin: auto;
+    float:left;
+    width: calc(100%/3);
+    height:100%;
+}
+
+.box:hover {
+    background-color: green;  
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.box:active {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+</style>
+
+<head>
+
+</head>
+
+
+
+
+<body>
+
+<div class = "square_container">  
+    <div class="row_container">
+        <div class="box">  </div>
+        <div class="box">  </div>
+        <div class="box">  </div>
+    </div>
+
+    <div class="row_container">  
+        <div class="box">  </div>
+        <div class="box">  </div>
+        <div class="box">  </div>
+    </div>
+
+    <div class="row_container">  
+        <div class="box">  </div>
+        <div class="box">  </div>
+        <div class="box">  </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
